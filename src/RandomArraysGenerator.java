@@ -72,10 +72,10 @@ public class RandomArraysGenerator {
                     anotherSymbols.addAll(wasInWord);
                     wasInWord.clear();
                 }
-                while (StringProcessor.arrayListContainsSimilarWords(generatedArray, new int [] {0, 4}, wordWith, 2) ||
-                       StringProcessor.arrayListContainsSimilarWords(generatedArray, new int [] {0, 4}, wordWithout, 2));
+                while (StringProcessor.arrayListContainsSimilarWords(generatedArray, new int [] {0, 5}, wordWith, 2) ||
+                       StringProcessor.arrayListContainsSimilarWords(generatedArray, new int [] {0, 5}, wordWithout, 2));
 
-                generatedArray.add(new String[]{wordWith, symbol.getSymbol() + " (" + symbol.getLetter() + ")", wordLettered,
+                generatedArray.add(new String[]{wordWith, symbol.getSymbol(), wordLettered, symbol.getLetter(),
                         Integer.toString(i+1), wordWithout, symbol.getSymbol(), Integer.toString(-1)});
 
             }
